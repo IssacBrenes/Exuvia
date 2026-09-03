@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": 4,
+
+  "arthropods": [
+    {
+      "id": "dynastes-hercules",
+
+      "scientificName": "Dynastes hercules",
+      "commonName": "Escarabajo Hércules",
+
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "subphylum": "Hexapoda",
+        "taxonomicClass": "Insecta",
+        "order": "Coleoptera",
+        "family": "Scarabaeidae",
+        "genus": "Dynastes",
+        "species": "hercules"
+      },
+
+      "highlightedAspect": {
+        "title": "Cuernos adaptados para el combate",
+
+        "summary": "Los machos utilizan sus grandes cuernos cefálico y torácico como una pinza para sujetar, levantar y desplazar a otros machos durante las disputas por el acceso a las hembras.",
+
+        "scientificExplanation": "Los cuernos de Dynastes hercules son estructuras sexualmente seleccionadas especializadas para el combate entre machos. Durante una confrontación, el macho intenta introducir al rival entre el cuerno cefálico y el cuerno torácico, sujetarlo, levantarlo del sustrato y finalmente arrojarlo o forzarlo a retirarse. La geometría de estas estructuras está estrechamente relacionada con este estilo de lucha."
+      },
+
+      "morphology": "Dynastes hercules es un escarabajo rinoceronte de cuerpo robusto. Los adultos presentan un exoesqueleto fuertemente esclerotizado. En los machos, el cuerpo es predominantemente negro, mientras que los élitros pueden presentar tonalidades oliva con sutura y manchas negras. Los machos poseen grandes cuernos cefálico y torácico. Las hembras carecen de estos cuernos y presentan élitros generalmente negros y de superficie fuertemente punteada.",
+
+      "adultLengthMinMm": 50.0,
+      "adultLengthMaxMm": 85.0,
+      "averageAdultLengthMm": null,
+
+      "variability": "La especie presenta una variación considerable en tamaño corporal, desarrollo de los cuernos y coloración. En los machos, el tamaño de los cuernos puede variar notablemente entre individuos. La coloración de los élitros también puede cambiar en respuesta a la humedad: en condiciones secas pueden presentar tonos oliva, mientras que un aumento de la humedad puede hacer que se oscurezcan hasta adquirir una apariencia negra.",
+
+      "behavior": "Los adultos son principalmente crepusculares o nocturnos y su máxima actividad puede producirse poco antes del amanecer. Los machos presentan comportamiento competitivo cuando disputan el acceso a las hembras, utilizando sus cuernos para sujetar, levantar y arrojar a otros machos. Los adultos se alimentan principalmente de frutos maduros o en descomposición caídos al suelo.",
+
+      "reproduction": "La reproducción es sexual y existe una fuerte competencia entre machos por el acceso a las hembras. Durante estas disputas, los machos utilizan sus cuernos como armas. Las larvas posteriormente se desarrollan asociadas a madera muerta y troncos en descomposición.",
+
+      "sexualDimorphism": "Dynastes hercules presenta un dimorfismo sexual muy marcado. Los machos poseen un gran cuerno torácico y otro cefálico que funcionan conjuntamente durante el combate; las hembras carecen de estos cuernos. Las hembras son generalmente oscuras y sus élitros presentan una superficie fuertemente punteada, mientras que los machos pueden presentar élitros con tonalidades oliva y manchas oscuras.",
+
+      "lifeCycle": "Dynastes hercules presenta metamorfosis completa: huevo, tres estadios larvales, pupa y adulto. En condiciones de laboratorio cercanas a 25 °C, se ha documentado una incubación media del huevo de 27,7 días. Los tres estadios larvales pueden durar aproximadamente 50, 56 y 450 días respectivamente. La fase de pupa dura alrededor de 32 días. El desarrollo completo puede requerir aproximadamente entre 19 y 21 meses, mientras que la longevidad total puede alcanzar cerca de dos años.",
+
+      "habitat": "La especie habita bosques tropicales húmedos, incluyendo bosques lluviosos montanos y de tierras bajas. Las larvas se desarrollan principalmente dentro de troncos podridos y madera en descomposición.",
+
+      "habitatExplanation": "La presencia de madera muerta y materia vegetal en descomposición es especialmente importante para el desarrollo larval, ya que las larvas son saproxilófagas y utilizan estos recursos como alimento. Los ecosistemas forestales también proporcionan a los adultos recursos alimenticios como frutos maduros o en descomposición.",
+
+      "distribution": "Dynastes hercules se distribuye desde el sur de México, a través de América Central, hasta regiones de América del Sur que alcanzan Bolivia, además de estar presente en las Antillas Menores. Se han documentado poblaciones en bosques lluviosos montanos y de tierras bajas de países como Brasil, Ecuador, Colombia y Perú.",
+
+      "ecology": "Las larvas son saproxilófagas y consumen madera muerta y material vegetal en descomposición. Mediante esta actividad contribuyen a la biodegradación y al reciclaje de nutrientes en los ecosistemas forestales. Los adultos utilizan frutos en descomposición como una de sus principales fuentes de alimento.",
+
+      "conservationStatus": null,
+
+      "images": [
+        {
+          "id": "dynastes-hercules-female-cahuita",
+
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Dynastes_hercules_%28Cahuita%29.jpg",
+
+          "author": "Hans Hillewaert",
+
+          "sourceName": "Wikimedia Commons",
+
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dynastes_hercules_(Cahuita).jpg",
+
+          "license": "CC BY-SA 4.0",
+
+          "description": "Hembra de Dynastes hercules fotografiada en Cahuita, Costa Rica.",
+
+          "specimenSex": "FEMALE",
+
+          "locality": "Cahuita",
+
+          "country": "Costa Rica",
+
+          "date": null,
+
+          "catalogCode": null,
+
+          "oppositeSexImageId": null,
+
+          "isPrimary": true
+        }
+      ],
+
+      "references": [
+        {
+          "title": "Dynastes (Dynastes) hercules (Linnaeus, 1758)",
+
+          "authors": null,
+
+          "organization": "GBIF / Catalogue of Life",
+
+          "publicationYear": null,
+
+          "url": "https://www.gbif.org/taxon/6DPX9",
+
+          "doi": null,
+
+          "sourceType": "TAXONOMY"
+        },
+
+        {
+          "title": "Hercules Beetle Dynastes hercules (Linnaeus, 1758) (Insecta: Coleoptera: Scarabaeidae)",
+
+          "authors": "Oliver Keller; Ronald D. Cave",
+
+          "organization": "University of Florida IFAS Extension",
+
+          "publicationYear": 2016,
+
+          "url": "https://ask.ifas.ufl.edu/publication/IN1142",
+
+          "doi": null,
+
+          "sourceType": "SPECIES_ACCOUNT"
+        },
+
+        {
+          "title": "Structural adaptations to diverse fighting styles in sexually selected weapons",
+
+          "authors": "McCullough, E. L.; Tobalske, B. W.; Emlen, D. J.",
+
+          "organization": "Proceedings of the National Academy of Sciences",
+
+          "publicationYear": 2014,
+
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4209975/",
+
+          "doi": null,
+
+          "sourceType": "SCIENTIFIC_ARTICLE"
+        },
+
+        {
+          "title": "Diffractive hygrochromic effect in the cuticle of the Hercules beetle Dynastes hercules",
+
+          "authors": "Rassart, M.; Colomer, J. F.; Tabarrant, T.; Vigneron, J. P.",
+
+          "organization": "New Journal of Physics",
+
+          "publicationYear": 2008,
+
+          "url": "https://iopscience.iop.org/article/10.1088/1367-2630/10/3/033014",
+
+          "doi": "10.1088/1367-2630/10/3/033014",
+
+          "sourceType": "SCIENTIFIC_ARTICLE"
+        }
+      ]
+    }
+  ]
+}

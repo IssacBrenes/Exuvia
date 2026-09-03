@@ -1,0 +1,396 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "671e2f676049fd87d96b7e5bf4190d54",
+    "entities": [
+      {
+        "tableName": "arthropods",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `scientificName` TEXT NOT NULL, `commonName` TEXT, `kingdom` TEXT NOT NULL, `phylum` TEXT NOT NULL, `subphylum` TEXT, `taxonomicClass` TEXT NOT NULL, `orderName` TEXT NOT NULL, `family` TEXT NOT NULL, `genus` TEXT NOT NULL, `species` TEXT NOT NULL, `highlightTitle` TEXT NOT NULL, `highlightSummary` TEXT NOT NULL, `highlightScientificExplanation` TEXT NOT NULL, `morphology` TEXT, `adultLengthMinMm` REAL, `adultLengthMaxMm` REAL, `averageAdultLengthMm` REAL, `variability` TEXT, `behavior` TEXT, `reproduction` TEXT, `sexualDimorphism` TEXT, `lifeCycle` TEXT, `habitat` TEXT, `habitatExplanation` TEXT, `distribution` TEXT, `ecology` TEXT, `conservationStatus` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scientificName",
+            "columnName": "scientificName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "commonName",
+            "columnName": "commonName",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "kingdom",
+            "columnName": "kingdom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phylum",
+            "columnName": "phylum",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "subphylum",
+            "columnName": "subphylum",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "taxonomicClass",
+            "columnName": "taxonomicClass",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderName",
+            "columnName": "orderName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "family",
+            "columnName": "family",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "genus",
+            "columnName": "genus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "species",
+            "columnName": "species",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highlightTitle",
+            "columnName": "highlightTitle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highlightSummary",
+            "columnName": "highlightSummary",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "highlightScientificExplanation",
+            "columnName": "highlightScientificExplanation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "morphology",
+            "columnName": "morphology",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "adultLengthMinMm",
+            "columnName": "adultLengthMinMm",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "adultLengthMaxMm",
+            "columnName": "adultLengthMaxMm",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "averageAdultLengthMm",
+            "columnName": "averageAdultLengthMm",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "variability",
+            "columnName": "variability",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "behavior",
+            "columnName": "behavior",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "reproduction",
+            "columnName": "reproduction",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sexualDimorphism",
+            "columnName": "sexualDimorphism",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lifeCycle",
+            "columnName": "lifeCycle",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "habitat",
+            "columnName": "habitat",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "habitatExplanation",
+            "columnName": "habitatExplanation",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "distribution",
+            "columnName": "distribution",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "ecology",
+            "columnName": "ecology",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "conservationStatus",
+            "columnName": "conservationStatus",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "arthropod_images",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `stableId` TEXT NOT NULL, `arthropodId` TEXT NOT NULL, `url` TEXT NOT NULL, `author` TEXT, `sourceName` TEXT NOT NULL, `sourceUrl` TEXT NOT NULL, `license` TEXT NOT NULL, `description` TEXT, `specimenSex` TEXT, `locality` TEXT, `country` TEXT, `date` TEXT, `catalogCode` TEXT, `oppositeSexImageId` TEXT, `isPrimary` INTEGER NOT NULL, FOREIGN KEY(`arthropodId`) REFERENCES `arthropods`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stableId",
+            "columnName": "stableId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "arthropodId",
+            "columnName": "arthropodId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "author",
+            "columnName": "author",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceName",
+            "columnName": "sourceName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceUrl",
+            "columnName": "sourceUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "license",
+            "columnName": "license",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "specimenSex",
+            "columnName": "specimenSex",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "locality",
+            "columnName": "locality",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "country",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "catalogCode",
+            "columnName": "catalogCode",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "oppositeSexImageId",
+            "columnName": "oppositeSexImageId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isPrimary",
+            "columnName": "isPrimary",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_arthropod_images_arthropodId",
+            "unique": false,
+            "columnNames": [
+              "arthropodId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_arthropod_images_arthropodId` ON `${TABLE_NAME}` (`arthropodId`)"
+          },
+          {
+            "name": "index_arthropod_images_stableId",
+            "unique": true,
+            "columnNames": [
+              "stableId"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_arthropod_images_stableId` ON `${TABLE_NAME}` (`stableId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "arthropods",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "arthropodId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "arthropod_references",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `arthropodId` TEXT NOT NULL, `title` TEXT NOT NULL, `authors` TEXT, `organization` TEXT, `publicationYear` INTEGER, `url` TEXT NOT NULL, `doi` TEXT, `sourceType` TEXT NOT NULL, FOREIGN KEY(`arthropodId`) REFERENCES `arthropods`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "arthropodId",
+            "columnName": "arthropodId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "authors",
+            "columnName": "authors",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "organization",
+            "columnName": "organization",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "publicationYear",
+            "columnName": "publicationYear",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doi",
+            "columnName": "doi",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourceType",
+            "columnName": "sourceType",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_arthropod_references_arthropodId",
+            "unique": false,
+            "columnNames": [
+              "arthropodId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_arthropod_references_arthropodId` ON `${TABLE_NAME}` (`arthropodId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "arthropods",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "arthropodId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '671e2f676049fd87d96b7e5bf4190d54')"
+    ]
+  }
+}
